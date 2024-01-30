@@ -6,7 +6,7 @@
 /*   By: bazura <bazuara@student.42madrid.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/30 15:51:24 by bazura            #+#    #+#             */
-/*   Updated: 2024/01/30 16:26:25 by bazura           ###   ########.fr       */
+/*   Updated: 2024/01/30 16:57:52 by bazura           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,15 @@ ClapTrap::~ClapTrap() {
 }  // ClapTrap destructor
 
 void ClapTrap::attack(const std::string& target) {
+  if (this->energy_points <= 0) {
+    std::cout << "ClapTrap " << this->name << " has no energy points!"
+              << std::endl;
+    return;
+  }
   std::cout << "ClapTrap " << this->name << " attacks " << target
             << ", causing " << this->attack_damage << " points of damage!"
-            << std::endl;
+            << this->energy_points << " EP remaining" << std::endl;
+  this->energy_points -= 1;
 }  // attack
 
 void ClapTrap::takeDamage(unsigned int amount) {
@@ -35,6 +41,13 @@ void ClapTrap::takeDamage(unsigned int amount) {
 }  // takeDamage
 
 void ClapTrap::beRepaired(unsigned int amount) {
+  if (this->energy_points <= 0) {
+    std::cout << "ClapTrap " << this->name << " has no energy points!"
+              << std::endl;
+    return;
+  }
   std::cout << "ClapTrap " << this->name << " is repaired " << amount
-            << " points!" << std::endl;
+            << " points! " << this->energy_points << " EP remaining"
+            << std::endl;
+  this->energy_points -= 1;
 }  // beRepaired
