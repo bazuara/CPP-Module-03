@@ -6,6 +6,7 @@ CPPLINT.cfg
 #leaks reports
 leaks.*.txt
 #ex00
+AaaaandOPEN
 #ex01
 #ex02
 #ex03

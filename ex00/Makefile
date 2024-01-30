@@ -1,4 +1,4 @@
-NAME = NowWeAreTalking
+NAME = AaaaandOPEN
 
 # Source files
 SOURCE_FOLDER = src/
