@@ -1,4 +1,4 @@
-NAME = SerenaMyLove
+NAME = RepetitiveWork
 
 # Source files
 SOURCE_FOLDER = src/
