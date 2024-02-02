@@ -6,7 +6,7 @@
 /*   By: bazura <bazuara@student.42madrid.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/30 16:47:22 by bazura            #+#    #+#             */
-/*   Updated: 2024/01/31 12:00:27 by bazura           ###   ########.fr       */
+/*   Updated: 2024/02/02 11:12:14 by bazura           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <clapTrap.hpp>
 
 class ScavTrap : public ClapTrap {
- private:
+ protected:
   std::string name;
   unsigned int hit_points;
   unsigned int energy_points;

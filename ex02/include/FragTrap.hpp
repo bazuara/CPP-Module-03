@@ -6,7 +6,7 @@
 /*   By: bazura <bazuara@student.42madrid.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 11:58:45 by bazura            #+#    #+#             */
-/*   Updated: 2024/01/31 12:03:54 by bazura           ###   ########.fr       */
+/*   Updated: 2024/02/02 11:27:55 by bazura           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include <clapTrap.hpp>
 
 class FragTrap : public ClapTrap {
- private:
+ protected:
   std::string name;
   unsigned int hit_points;
   unsigned int energy_points;
@@ -32,4 +32,4 @@ class FragTrap : public ClapTrap {
   void highFivesGuys();
 };
 
-#endif // FRAGTRAP_HPP
+#endif  // FRAGTRAP_HPP
