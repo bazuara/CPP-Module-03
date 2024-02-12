@@ -2,7 +2,6 @@
 *.o
 .cache
 *.pdf
-CPPLINT.cfg
 #leaks reports
 leaks.*.txt
 #ex00
